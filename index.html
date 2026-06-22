@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>退職の切り出し方メーカー｜言い出せない人の台本・本音→建前・引き止め返し</title>
-<meta name="description" content="辞めたいのに言い出せない人へ。退職の切り出し方（アポ・最初の一言）、退職理由の本音→建前変換、引き止めへの返し、円満退職の段取りと法律（民法627条ほか）を、選ぶだけで台本として出します。AI不使用・無料・コピペOK。">
+<title>辞めたいのに、言い出せないあなたへ｜退職の背中を押すツール</title>
+<meta name="description" content="退職を言い出せないのは、言い方を知らないからじゃない。怖さ・罪悪感・「逃げかも」という自己否定が止めている。まず気持ちを受け止め、辞めていいという許可と確信を渡し、最後に切り出しの台本まで。AI不使用・無料。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23FAF9F6'/><text x='32' y='47' font-size='34' text-anchor='middle' fill='%239C6B3F' font-family='serif'>退</text></svg>">
 <link rel="canonical" href="https://chiiita.github.io/taishoku/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="退職の切り出し方メーカー｜言い出せないあなたへ">
-<meta property="og:description" content="切り出し方・退職理由の本音→建前・引き止め返し・段取りと法律。選ぶだけで台本が出る無料ツール。">
+<meta property="og:title" content="辞めたいのに、言い出せないあなたへ">
+<meta property="og:description" content="言い方を知らないんじゃない。怖さと罪悪感が止めてる。辞めていいという許可と確信を渡し、最後に台本まで。">
 <meta property="og:url" content="https://chiiita.github.io/taishoku/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,107 +20,118 @@
     --gold:#9C6B3F;--gold-tint:#F3EBE0;--radius:8px;--serif:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
     --sans:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;--warn:#C2664F;--warn-tint:#F7ECEC;--ok:#5b9b6f;--ok-tint:#EAF3EC;}
   *{box-sizing:border-box}html,body{margin:0;padding:0}
-  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.85;font-size:16px;letter-spacing:.012em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
-  .wrap{max-width:720px;margin:0 auto;padding:0 22px 96px}
-  header.hero{text-align:center;padding:48px 8px 16px}
-  .kicker{font-size:.7rem;letter-spacing:.3em;color:var(--gold);font-weight:500;margin:0 0 14px;text-indent:.3em}
-  .hero h1{font-family:var(--serif);font-weight:700;font-size:1.8rem;line-height:1.5;margin:0 0 12px;letter-spacing:.02em}
-  .hero h1 .thin{font-size:1rem;display:block;color:var(--ink-soft);font-weight:500;margin-top:8px;letter-spacing:.04em}
-  .hr-deco{width:40px;height:1px;background:var(--gold);margin:16px auto;opacity:.7}
-  .hero p{color:var(--ink-soft);font-size:.86rem;margin:0}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.9;font-size:16px;letter-spacing:.012em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px 96px}
+  header.hero{text-align:center;padding:56px 8px 22px}
+  .kicker{font-size:.7rem;letter-spacing:.3em;color:var(--gold);font-weight:500;margin:0 0 16px;text-indent:.3em}
+  .hero h1{font-family:var(--serif);font-weight:700;font-size:1.85rem;line-height:1.55;margin:0 0 14px;letter-spacing:.02em}
+  .hr-deco{width:40px;height:1px;background:var(--gold);margin:18px auto;opacity:.7}
+  .hero p{color:var(--ink-soft);font-size:.92rem;margin:0}
+  .hero .lead{font-family:var(--serif);font-size:1.05rem;color:var(--ink);margin:14px 0 0;line-height:1.9}
 
-  .tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:22px 0 4px}
-  .tabs button{border:1px solid var(--rule);background:#fff;border-radius:999px;padding:9px 15px;font-size:.82rem;font-family:var(--sans);
-    color:var(--sub);cursor:pointer;font-weight:600;transition:.15s;white-space:nowrap}
+  .stepnum{display:flex;align-items:center;gap:12px;margin:34px 2px 14px}
+  .stepnum .n{font-family:var(--serif);font-size:.8rem;color:var(--gold);font-weight:600;letter-spacing:.1em;border:1px solid var(--gold);border-radius:999px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .stepnum .t{font-family:var(--serif);font-weight:700;font-size:1.1rem;letter-spacing:.02em}
+
+  .typecards{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:520px){.typecards{grid-template-columns:1fr}}
+  .tcard{background:#fff;border:1px solid var(--rule);border-radius:var(--radius);padding:16px 16px;cursor:pointer;transition:.18s;text-align:left}
+  .tcard:hover{border-color:var(--gold);transform:translateY(-2px)}
+  .tcard.on{border-color:var(--ink);border-width:1.5px;background:#fff;box-shadow:0 4px 16px rgba(80,60,40,.08)}
+  .tcard .voice{font-size:.96rem;color:var(--ink);font-weight:500;line-height:1.7}
+  .tcard .nm{font-size:.7rem;color:var(--gold);font-weight:700;margin-top:8px;letter-spacing:.04em}
+
+  .permit{background:#fff;border:1px solid var(--rule);border-radius:var(--radius);padding:26px 24px;margin:14px 0;animation:fade .4s ease both}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .permit h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--gold);margin:0 0 14px;line-height:1.6}
+  .permit p{font-size:.96rem;line-height:2;color:var(--ink);margin:0 0 14px}
+  .permit b{font-weight:700}
+  .permit .seal{font-family:var(--serif);font-size:1.1rem;color:var(--ink);text-align:center;border-top:1px solid var(--rule-soft);padding-top:16px;margin-top:4px;line-height:1.8}
+  .permit .voiceq{background:var(--rule-soft);border-radius:8px;padding:12px 14px;font-size:.86rem;color:var(--ink-soft);line-height:1.8}
+  .permit .escape{background:var(--gold-tint);border:1px solid #E6D6C2;border-radius:8px;padding:14px 16px;margin-top:12px;font-size:.86rem;line-height:1.8}
+  .permit .escape b{color:#7A4F2C}
+  .permit-empty{border:1px dashed var(--rule);border-radius:var(--radius);padding:22px;text-align:center;color:var(--sub);font-size:.86rem;margin:14px 0}
+
+  .detox .d-lead{font-size:.92rem;color:var(--ink-soft);line-height:1.9;margin:0 0 12px}
+  .detox .d-lead b{color:var(--ink)}
+  .dcard{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:13px 15px;margin:8px 0}
+  .dcard .said{font-size:.9rem;color:var(--ink);font-weight:600}
+  .dcard .real{font-size:.84rem;color:var(--ink-soft);margin-top:5px;line-height:1.8}
+  .dcard .real .q{color:var(--gold);font-weight:700}
+
+  .tabs{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+  .tabs button{border:1px solid var(--rule);background:#fff;border-radius:999px;padding:8px 14px;font-size:.8rem;font-family:var(--sans);color:var(--sub);cursor:pointer;font-weight:600;transition:.15s;white-space:nowrap}
   .tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-
-  .panel{background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);padding:24px 22px;margin:16px 0}
-  .sec-h{font-family:var(--serif);font-weight:700;font-size:1.05rem;margin:0 0 4px;letter-spacing:.02em}
+  .panel{background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);padding:22px;margin:10px 0}
   .sec-d{font-size:.8rem;color:var(--sub);margin:0 0 14px}
   .lbl{font-size:.78rem;color:var(--sub);font-weight:700;letter-spacing:.04em;margin:16px 0 8px}
-
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:#fff;border:1px solid var(--rule);border-radius:999px;padding:8px 14px;font-size:.85rem;color:var(--ink-soft);cursor:pointer;transition:.15s;font-weight:500}
   .chip:hover{border-color:var(--gold);color:var(--gold)}
   .chip.on{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:700}
   .cat-lead{font-size:.7rem;color:var(--gold);font-weight:700;letter-spacing:.08em;width:100%;margin:8px 0 2px}
-
   .copybox{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:12px 14px;margin:8px 0;display:flex;gap:10px;align-items:flex-start;justify-content:space-between}
-  .copybox .ct{font-size:.95rem;line-height:1.8;color:var(--ink)}
-  .copybox .ct .k{font-size:.7rem;color:var(--sub);display:block;margin-bottom:2px}
-
-  .tone{padding:16px 0 4px;border-top:1px solid var(--rule-soft)}
-  .tone:first-of-type{border-top:none}
+  .copybox .ct{font-size:.95rem;line-height:1.8;color:var(--ink)} .copybox .ct .k{font-size:.7rem;color:var(--sub);display:block;margin-bottom:2px}
+  .tone{padding:16px 0 4px;border-top:1px solid var(--rule-soft)} .tone:first-of-type{border-top:none}
   .tone-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}
-  .tone-name{display:flex;align-items:center;gap:10px}
-  .dots{letter-spacing:2px;font-size:.7rem;color:var(--gold)}
-  .tone-label{font-family:var(--sans);font-size:.84rem;font-weight:700;color:var(--ink)}
-  .tone-note{font-size:.68rem;color:var(--sub)}
+  .tone-name{display:flex;align-items:center;gap:10px} .dots{letter-spacing:2px;font-size:.7rem;color:var(--gold)}
+  .tone-label{font-size:.84rem;font-weight:700;color:var(--ink)} .tone-note{font-size:.68rem;color:var(--sub)}
   .quote{position:relative;padding-left:18px;font-size:1rem;line-height:1.95;color:var(--ink)}
   .quote::before{content:"";position:absolute;left:0;top:.35em;bottom:.35em;width:2px;background:var(--gold);opacity:.55;border-radius:2px}
   .btn{background:transparent;border:1px solid var(--rule);border-radius:6px;padding:5px 12px;font-size:.72rem;cursor:pointer;color:var(--sub);font-weight:500;white-space:nowrap;transition:.18s;font-family:var(--sans)}
-  .btn:hover{border-color:var(--gold);color:var(--gold)}
-  .btn.done{border-color:var(--gold);color:var(--gold);background:var(--gold-tint)}
-
-  .reframe{background:var(--ok-tint);border:1px solid #cfe6d7;border-radius:8px;padding:12px 14px;margin:14px 0 4px;font-size:.84rem;color:#2f6b46;line-height:1.8}
-  .reframe.warn{background:var(--warn-tint);border-color:#ecd5cf;color:#9a3f2c}
+  .btn:hover{border-color:var(--gold);color:var(--gold)} .btn.done{border-color:var(--gold);color:var(--gold);background:var(--gold-tint)}
   .badge-asis{display:inline-block;font-size:.68rem;background:var(--ok-tint);color:#2f6b46;border:1px solid #cfe6d7;border-radius:999px;padding:2px 10px;margin-bottom:8px;font-weight:700}
   .note{font-size:.78rem;color:var(--ink-soft);background:var(--rule-soft);border-radius:6px;padding:10px 12px;margin-top:10px;line-height:1.7}
+  .reframe{background:var(--ok-tint);border:1px solid #cfe6d7;border-radius:8px;padding:12px 14px;margin:14px 0 4px;font-size:.84rem;color:#2f6b46;line-height:1.8}
+  .reframe.warn{background:var(--warn-tint);border-color:#ecd5cf;color:#9a3f2c}
+  .law h4{font-family:var(--serif);font-size:.98rem;margin:18px 0 6px;color:var(--ink)} .law p,.law li{font-size:.86rem;color:var(--ink-soft);line-height:1.85} .law ol,.law ul{padding-left:1.2em;margin:6px 0}
+  .lawcard{border:1px solid var(--rule);border-radius:8px;padding:12px 14px;margin:8px 0} .lawcard .ttl{font-weight:700;color:var(--ink);font-size:.9rem} .lawcard .src{font-size:.7rem;color:var(--sub);margin-top:4px}
+  .escape2{background:var(--gold-tint);border:1px solid #E6D6C2;border-radius:8px;padding:16px;margin:16px 0} .escape2 .h{font-family:var(--serif);font-weight:700;color:#7A4F2C;margin:0 0 6px}
 
-  .law h4{font-family:var(--serif);font-size:.98rem;margin:18px 0 6px;color:var(--ink)}
-  .law p,.law li{font-size:.86rem;color:var(--ink-soft);line-height:1.85}
-  .law ol,.law ul{padding-left:1.2em;margin:6px 0}
-  .lawcard{border:1px solid var(--rule);border-radius:8px;padding:12px 14px;margin:8px 0}
-  .lawcard .ttl{font-weight:700;color:var(--ink);font-size:.9rem}
-  .lawcard .src{font-size:.7rem;color:var(--sub);margin-top:4px}
-  .escape{background:var(--gold-tint);border:1px solid #E6D6C2;border-radius:8px;padding:16px;margin:16px 0}
-  .escape .h{font-family:var(--serif);font-weight:700;color:#7A4F2C;margin:0 0 6px}
-
-  .tip{font-size:.8rem;color:var(--ink-soft);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;margin:22px 0;line-height:1.9}
-  .tip .tip-h{font-family:var(--serif);color:var(--gold);font-weight:600;display:block;margin-bottom:8px;font-size:.86rem}
-  .tip b{color:var(--ink)}
-  .cta{background:var(--gold-tint);border:1px solid #E6D6C2;border-radius:8px;padding:22px;margin:18px 0;text-align:center}
-  .cta h3{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:#7A4F2C;margin:0 0 6px}
-  .cta p{font-size:.82rem;color:var(--ink-soft);margin:0 0 14px}
+  .cta{background:var(--gold-tint);border:1px solid #E6D6C2;border-radius:8px;padding:22px;margin:24px 0;text-align:center}
+  .cta h3{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:#7A4F2C;margin:0 0 6px} .cta p{font-size:.82rem;color:var(--ink-soft);margin:0 0 14px}
   .cta a{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;border-radius:999px;padding:10px 24px;font-size:.84rem;font-weight:700}
-  footer{text-align:center;color:var(--sub);font-size:.7rem;margin-top:30px;line-height:2}
-  .foot-rule{width:30px;height:1px;background:var(--rule);margin:0 auto 16px}
+  footer{text-align:center;color:var(--sub);font-size:.7rem;margin-top:30px;line-height:2} .foot-rule{width:30px;height:1px;background:var(--rule);margin:0 auto 16px}
   .disc{font-size:.68rem;color:var(--sub);margin-top:8px}
-  @media(max-width:480px){.wrap{padding:0 16px 80px}.hero h1{font-size:1.45rem}.panel{padding:20px 16px}}
+  @media(max-width:480px){.wrap{padding:0 16px 80px}.hero h1{font-size:1.5rem}.panel{padding:18px 16px}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
     <p class="kicker">TAISHOKU</p>
-    <h1>辞めたいのに、言い出せないあなたへ<span class="thin">退職の切り出し方メーカー</span></h1>
+    <h1>辞めたいのに、<br>言い出せないあなたへ</h1>
     <div class="hr-deco"></div>
-    <p>選ぶだけで、最初の一言から引き止め返しまで。今日、一歩を踏み出すための台本。</p>
+    <p>言い方を知らないんじゃない。怖さと罪悪感が、止めているだけ。</p>
+    <p class="lead">まず、あなたの気持ちを受け止めさせてください。</p>
   </header>
 
-  <div class="tabs" id="tabs">
-    <button data-tab="kirisashi" class="on">① 切り出す</button>
-    <button data-tab="reason">② 理由を伝える</button>
-    <button data-tab="pushback">③ 引き止めに返す</button>
-    <button data-tab="law">④ 段取り・法律</button>
-  </div>
+  <div class="stepnum"><span class="n">01</span><span class="t">今のあなたに、近いのは？</span></div>
+  <div class="typecards" id="types"></div>
 
+  <div class="stepnum"><span class="n">02</span><span class="t">あなたへ、ひとつだけ</span></div>
+  <div id="permit"></div>
+
+  <div class="stepnum"><span class="n">03</span><span class="t">引き止められても、揺らがないために</span></div>
+  <div class="panel detox" id="detox"></div>
+
+  <div class="stepnum"><span class="n">04</span><span class="t">準備ができたら、ここから言葉を</span></div>
+  <div class="tabs" id="tabs">
+    <button data-tab="kirisashi" class="on">切り出す</button>
+    <button data-tab="reason">理由を伝える</button>
+    <button data-tab="pushback">引き止めに返す</button>
+    <button data-tab="law">段取り・法律</button>
+  </div>
   <div id="view"></div>
 
   <div class="cta" id="cta" style="display:none">
     <h3 id="ctaTitle"></h3><p id="ctaText"></p><a id="ctaLink" href="#" target="_blank" rel="noopener"></a>
   </div>
 
-  <div class="tip">
-    <span class="tip-h">大事なこと</span>
-    退職は<b>法律で認められたあなたの権利</b>です（無期雇用なら申し出から2週間で成立／民法627条）。<br>
-    人手不足や後任の不在は<b>会社の責任</b>であって、あなたが我慢する理由にはなりません。迷ったら「④段取り・法律」を後ろ盾に。
-  </div>
-
   <footer>
     <div class="foot-rule"></div>
-    退職の切り出し方メーカー ｜ お悩み解決ツール<br>
-    <span class="disc">本ツールは一般的な情報提供で、法的助言ではありません。個別の事情は労働基準監督署・弁護士・労働組合等にご相談ください。AI不使用・ブラウザ内処理。</span>
+    辞めたいのに、言い出せないあなたへ ｜ お悩み解決ツール<br>
+    <span class="disc">一般的な情報提供であり、法的・医療的助言ではありません。つらい時は労働基準監督署・弁護士・医療機関等にご相談ください。AI不使用・ブラウザ内処理。</span>
   </footer>
 </div>
 
@@ -129,109 +140,101 @@
 <script src="data/pushback.js"></script>
 <script>
 (function(){
-  const NOTE_URL="";const NOTE_TITLE="退職代行を使わず、自力で円満退職する完全テンプレ集";const NOTE_TEXT="切り出し〜引き止め返し〜トラブル対応〜逆算チェックリストを全部入りで。";
+  const NOTE_URL="";const NOTE_TITLE="退職代行を使わず、自力で円満退職する完全ガイド";const NOTE_TEXT="背中を押す言葉から、切り出し〜引き止め〜トラブル対応〜逆算チェックリストまで全部入りで。";
   const $=(s,el=document)=>el.querySelector(s);
   const el=(t,c)=>{const e=document.createElement(t);if(c)e.className=c;return e;};
   const esc=s=>String(s).replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));
   const TONES=[{key:"soft",label:"やわらか",note:"感謝厚め・控えめ",dots:"●○○"},{key:"standard",label:"標準",note:"はっきり、でも穏やか",dots:"●●○"},{key:"firm",label:"きっぱり",note:"言い切る",dots:"●●●"}];
   function copyBtn(getText){const b=el("button","btn");b.textContent="コピー";b.onclick=()=>{const txt=getText();const ok=()=>{b.textContent="✓ コピー";b.classList.add("done");setTimeout(()=>{b.textContent="コピー";b.classList.remove("done");},1400);};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,ok);}else{const ta=el("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(e){}ta.remove();ok();}};return b;}
   function copyBox(kicker,text){const d=el("div","copybox");const ct=el("div","ct");ct.innerHTML=(kicker?`<span class="k">${esc(kicker)}</span>`:"")+esc(text);d.appendChild(ct);d.appendChild(copyBtn(()=>text));return d;}
-  function toneBlock(obj,threat){const wrap=el("div");const tones=TONES.filter(t=>obj[t.key]);tones.forEach(t=>{const tn=el("div","tone");const head=el("div","tone-head");const nm=el("div","tone-name");nm.innerHTML=`<span class="dots">${t.dots}</span><span class="tone-label">${t.label}</span><span class="tone-note">${t.note}</span>`;head.appendChild(nm);head.appendChild(copyBtn(()=>obj[t.key]));const q=el("div","quote");q.textContent=obj[t.key];tn.appendChild(head);tn.appendChild(q);wrap.appendChild(tn);});return wrap;}
+  function toneBlock(obj){const w=el("div");TONES.filter(t=>obj[t.key]).forEach(t=>{const tn=el("div","tone");const head=el("div","tone-head");const nm=el("div","tone-name");nm.innerHTML=`<span class="dots">${t.dots}</span><span class="tone-label">${t.label}</span><span class="tone-note">${t.note}</span>`;head.appendChild(nm);head.appendChild(copyBtn(()=>obj[t.key]));const q=el("div","quote");q.textContent=obj[t.key];tn.appendChild(head);tn.appendChild(q);w.appendChild(tn);});return w;}
 
-  const state={tab:"kirisashi",reasonId:null,pushId:null,situId:(typeof KIRISASHI!=='undefined'&&KIRISASHI[0])?KIRISASHI[0].id:null};
+  // ===== STEP1-2 感情タイプと許可の言葉 =====
+  const TYPES=[
+    {key:"fear",voice:"言う「瞬間」が怖くて、動けない",nm:"恐怖でフリーズ",
+     h:"怖いのは、たった数秒だけ。",
+     body:`<p>言う瞬間が、怖いんですよね。何度も席を立っては戻ってしまう——それは弱さじゃなく、<b>あなたが誠実に向き合おうとしている証拠</b>です。</p><p>怖いのは「退職」そのものじゃなく、<b>「あの一文を言う数秒」だけ</b>。その数秒さえ越えれば、あとは手続きが流れていきます。</p><p>完璧に言えなくていい。震えた声でも、メモを読み上げても、伝われば十分です。</p>`,
+     seal:"大丈夫。まずは「相談したい」の一言だけ。下に、そのまま送れる文があります。"},
+    {key:"guilt",voice:"いい人たちだから、申し訳なくて言えない",nm:"罪悪感でマヒ",
+     h:"あなたは、恩知らずじゃない。",
+     body:`<p>優しい人たちで、お世話になった。だから言い出せない——その罪悪感は、<b>あなたが恩を感じられる人だという証拠</b>です。</p><p>でも、ひとつだけ。あなたが抜けて現場が回らないのは、本来<b>"会社が用意すべき体制"の問題</b>であって、あなたの罪ではありません。</p><p>恩は、最後まで誠実に引き継ぐことで十分に返せます。<b>辞めることは、裏切りじゃない。</b></p>`,
+     seal:"辞めても、あなたは悪い人じゃない。胸を張っていい。"},
+    {key:"self",voice:"こんなことで悩む自分が、情けない",nm:"自己否定のループ",
+     h:"それは、逃げでも甘えでもない。",
+     body:`<p>「こんなことも言えない自分」を、責めていませんか。でも、辞めたいと思うことも、怖くて言えないことも、<b>逃げでも甘えでもありません</b>。</p><p>合わない場所から離れるのは、<b>自分を守る正当な判断</b>です。同じように「怖くて何週間も言えなかった」人が、言えた後にこう書いています——</p><div class="voiceq">「何でこんなことで悩んでたんだろう、と思うくらいスッキリした」</div><p style="margin-top:14px">あなたが弱いんじゃない。<b>順番が、まだ来ていないだけ。</b></p>`,
+     seal:"逃げじゃない。これは、自分の人生を選ぶということ。"},
+    {key:"limit",voice:"もう限界。考える気力もない",nm:"心身が限界",
+     h:"もう、がんばらなくていい。",
+     body:`<p>気力が残っていないなら、上手に言おうとしなくていいです。心や体が「このままでは危ない」と言っているなら、<b>それが最優先のサイン</b>。</p><p>自分で言うのがつらければ、<b>言わずに済む方法</b>もあります。あなたが悪いんじゃない。まず、あなたの安全を。</p>`,
+     seal:"あなたの心と体より大切な仕事は、ありません。",
+     escape:`<b>言わずに済む・頼っていい選択肢</b><br>・心身がつらい → <b>休職・通院</b>（診断書で休める）<br>・違法な引き止め → <b>労働基準監督署</b><br>・離職票が届かない → <b>ハローワーク</b><br>・どうしても自分で言えない → <b>退職代行</b>（交渉が要るなら労働組合・弁護士運営を）`},
+  ];
+  const DETOX={lead:`引き止めの多くは、<b>"保証"ではなく"希望"</b>です。心の中で<span style="color:var(--gold);font-weight:700">「それ、保証ですか？」</span>と問えば、たいてい溶けます。`,
+    items:[
+      {said:"給料を上げるから",real:`<span class="q">それ、書面の保証ですか？</span> 辞める時にしか上がらない給料は、これまでの評価の答えでもあります。`},
+      {said:"別の部署に異動させる",real:`<span class="q">"異動できるかも"＝希望です。</span> 人事は保証してくれていますか？ 環境の問題ではなく、あなたの進む方向の話です。`},
+      {said:"今は人手が足りない",real:`<span class="q">採用と人員配置は、会社の責任。</span> あなたが我慢して埋める穴ではありません。`},
+      {said:"もう少しだけ待って",real:`<span class="q">待つほど、言いづらくなります。</span> 日付は動かさない。応じるなら必ず書面（退職届）に残す。`},
+      {said:"ここまで育てた恩があるだろう",real:`<span class="q">恩と退職は、別の話。</span> 感謝は、最後まで誠実に引き継ぐことで返せます。`},
+      {said:"損害賠償だ／離職票は出さない",real:`<span class="q">それは違法な脅しです。</span> 自己都合退職で賠償が認められることはほぼなく、退職は申し出から2週間で成立します（→「④段取り・法律」）。怯えなくて大丈夫。`},
+    ]};
+
+  const state={type:null,tab:"kirisashi",reasonId:null,pushId:null,situId:(typeof KIRISASHI!=='undefined'&&KIRISASHI[0])?KIRISASHI[0].id:null};
+
+  function renderTypes(){
+    const box=$("#types");box.innerHTML="";
+    TYPES.forEach(t=>{const c=el("div","tcard"+(state.type===t.key?" on":""));
+      c.innerHTML=`<div class="voice">「${t.voice}」</div><div class="nm">${t.nm}</div>`;
+      c.onclick=()=>{state.type=t.key;renderTypes();renderPermit();$("#permit").scrollIntoView({behavior:"smooth",block:"start"});};
+      box.appendChild(c);});
+  }
+  function renderPermit(){
+    const box=$("#permit");box.innerHTML="";
+    const t=TYPES.find(x=>x.key===state.type);
+    if(!t){box.innerHTML=`<div class="permit-empty">↑ いちばん近い気持ちを選ぶと、ここにあなたへの言葉が出ます。</div>`;return;}
+    const p=el("div","permit");
+    p.innerHTML=`<h3>${esc(t.h)}</h3>${t.body}`+(t.escape?`<div class="escape">${t.escape}</div>`:"")+`<div class="seal">${esc(t.seal)}</div>`;
+    box.appendChild(p);
+  }
+  function renderDetox(){
+    const box=$("#detox");box.innerHTML=`<div class="d-lead">${DETOX.lead}</div>`;
+    DETOX.items.forEach(it=>{const d=el("div","dcard");d.innerHTML=`<div class="said">「${esc(it.said)}」と言われたら</div><div class="real">${it.real}</div>`;box.appendChild(d);});
+  }
+
+  // ===== STEP4 道具 =====
+  $("#tabs").querySelectorAll("button").forEach(b=>{b.onclick=()=>{state.tab=b.dataset.tab;$("#tabs").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x.dataset.tab===state.tab));renderView();};});
   const view=$("#view");
-
-  // tabs
-  $("#tabs").querySelectorAll("button").forEach(b=>{b.onclick=()=>{state.tab=b.dataset.tab;$("#tabs").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x.dataset.tab===state.tab));render();window.scrollTo({top:0,behavior:"smooth"});};});
-
-  function render(){
-    view.innerHTML="";
-    if(state.tab==="kirisashi")renderKirisashi();
-    else if(state.tab==="reason")renderReason();
-    else if(state.tab==="pushback")renderPushback();
-    else renderLaw();
-    $("#cta").style.display="block";$("#ctaTitle").textContent=NOTE_TITLE;$("#ctaText").textContent=NOTE_TEXT;
-    const a=$("#ctaLink");if(NOTE_URL){a.style.display="inline-block";a.href=NOTE_URL;a.textContent="noteで全部見る →";}else{a.style.display="none";}
-  }
-
-  function renderKirisashi(){
-    const p=el("div","panel");
-    p.innerHTML=`<div class="sec-h">① 切り出す</div><div class="sec-d">まず直属の上司に。アポは「退職」と言わず「相談」で。最初の一言は言い切るのがコツ。</div>`;
-    p.innerHTML+=`<div class="lbl">まずアポを取る（コピーして送る/言う）</div>`;
-    p.appendChild(copyBox("口頭で",APO.kuchi));
-    p.appendChild(copyBox("メール件名",APO.mailSubject));
-    p.appendChild(copyBox("メール本文",APO.mailBody));
-    const lbl=el("div","lbl");lbl.textContent="次に、面談での最初の一言（状況を選ぶ）";p.appendChild(lbl);
-    const chips=el("div","chips");
-    KIRISASHI.forEach(k=>{const c=el("div","chip"+(k.id===state.situId?" on":""));c.textContent=k.situ;c.onclick=()=>{state.situId=k.id;render();};chips.appendChild(c);});
-    p.appendChild(chips);
-    const k=KIRISASHI.find(x=>x.id===state.situId)||KIRISASHI[0];
-    if(k){const box=el("div");box.style.marginTop="12px";box.appendChild(toneBlock(k));if(k.note){const n=el("div","note");n.textContent="💡 "+k.note;box.appendChild(n);}p.appendChild(box);}
-    view.appendChild(p);
-  }
-
-  function renderReason(){
-    const p=el("div","panel");
-    p.innerHTML=`<div class="sec-h">② 退職理由 本音→建前</div><div class="sec-d">本音を選ぶと、角が立たない建前を3トーンで。会社批判は出さず、自分のキャリア/生活を主語に。</div>`;
-    const cats=[...new Set(REASONS.map(r=>r.cat))];
-    const chips=el("div","chips");
-    cats.forEach(cat=>{const lead=el("div","cat-lead");lead.textContent=cat;chips.appendChild(lead);
-      REASONS.filter(r=>r.cat===cat).forEach(r=>{const c=el("div","chip"+(r.id===state.reasonId?" on":""));c.textContent=r.honne;c.onclick=()=>{state.reasonId=r.id;render();};chips.appendChild(c);});});
-    p.appendChild(chips);
-    const r=REASONS.find(x=>x.id===state.reasonId);
-    if(r){const box=el("div");box.style.marginTop="14px";
-      if(r.asis){const b=el("div");b.innerHTML=`<span class="badge-asis">✓ そのまま伝えてOK</span>`;box.appendChild(b);}
-      box.appendChild(toneBlock(r));
-      if(r.note){const n=el("div","note");n.textContent="💡 "+r.note;box.appendChild(n);}
-      p.appendChild(box);
-    }else{const h=el("div","sec-d");h.textContent="↑ 本音を選んでください。";p.appendChild(h);}
-    view.appendChild(p);
-  }
-
-  function renderPushback(){
-    const p=el("div","panel");
-    p.innerHTML=`<div class="sec-h">③ 引き止めに返す</div><div class="sec-d">「感謝で受ける→決意は変えない→引き継ぎで誠意」が型。脅し系は毅然とでOK。</div>`;
-    const chips=el("div","chips");
-    PUSHBACK.forEach(pb=>{const c=el("div","chip"+(pb.id===state.pushId?" on":""));c.textContent=pb.type;c.onclick=()=>{state.pushId=pb.id;render();};chips.appendChild(c);});
-    p.appendChild(chips);
-    const pb=PUSHBACK.find(x=>x.id===state.pushId);
-    if(pb){const box=el("div");box.style.marginTop="14px";
-      const said=el("div","reframe"+(pb.threat?" warn":""));said.innerHTML=(pb.threat?"⚠️ ":"")+`「${esc(pb.said)}」と言われたら：`;box.appendChild(said);
-      box.appendChild(toneBlock(pb));
-      if(pb.note){const n=el("div","note");n.textContent=(pb.threat?"⚖️ ":"💡 ")+pb.note;box.appendChild(n);}
-      p.appendChild(box);
-    }else{const h=el("div","sec-d");h.textContent="↑ 言われた引き止めを選んでください。";p.appendChild(h);}
-    view.appendChild(p);
-  }
-
-  function renderLaw(){
-    const p=el("div","panel law");
-    p.innerHTML=`<div class="sec-h">④ 円満退職の段取り・法律</div><div class="sec-d">不安を消す後ろ盾。ここは事実なのでトーン分けなし。</div>`;
-    p.innerHTML+=`<h4>伝える順番</h4><ol>
-      <li>直属の上司にアポ（「相談がある」）</li><li>面談で口頭で意思表示（言い切る）</li><li>退職日を合意</li>
-      <li>退職届を提出</li><li>引き継ぎ（資料・マニュアル化）</li><li>関係者・取引先へ周知</li><li>備品返却・離職票等の受領</li></ol>`;
-    p.innerHTML+=`<h4>退職願 と 退職届 の違い</h4>
-      <div class="lawcard"><span class="ttl">退職願</span>＝合意退職の「お願い」。会社が承認する前なら撤回できる。</div>
-      <div class="lawcard"><span class="ttl">退職届</span>＝確定的な意思表示。会社に到達すると原則撤回できない（強く辞めたい時はこちら）。</div>`;
+  function renderView(){view.innerHTML="";if(state.tab==="kirisashi")rKiri();else if(state.tab==="reason")rReason();else if(state.tab==="pushback")rPush();else rLaw();}
+  function rKiri(){const p=el("div","panel");p.innerHTML=`<div class="sec-d">まず直属の上司にアポを。「退職」と言わず「相談」で。最初の一言は言い切る。</div><div class="lbl">アポを取る</div>`;
+    p.appendChild(copyBox("口頭で",APO.kuchi));p.appendChild(copyBox("メール件名",APO.mailSubject));p.appendChild(copyBox("メール本文",APO.mailBody));
+    const l=el("div","lbl");l.textContent="面談での最初の一言（状況を選ぶ）";p.appendChild(l);
+    const ch=el("div","chips");KIRISASHI.forEach(k=>{const c=el("div","chip"+(k.id===state.situId?" on":""));c.textContent=k.situ;c.onclick=()=>{state.situId=k.id;renderView();};ch.appendChild(c);});p.appendChild(ch);
+    const k=KIRISASHI.find(x=>x.id===state.situId)||KIRISASHI[0];if(k){const b=el("div");b.style.marginTop="12px";b.appendChild(toneBlock(k));if(k.note){const n=el("div","note");n.textContent="💡 "+k.note;b.appendChild(n);}p.appendChild(b);}view.appendChild(p);}
+  function rReason(){const p=el("div","panel");p.innerHTML=`<div class="sec-d">本音を選ぶと、角が立たない建前を3トーンで。会社批判は出さず、自分のキャリア/生活を主語に。</div>`;
+    const cats=[...new Set(REASONS.map(r=>r.cat))];const ch=el("div","chips");
+    cats.forEach(cat=>{const lead=el("div","cat-lead");lead.textContent=cat;ch.appendChild(lead);REASONS.filter(r=>r.cat===cat).forEach(r=>{const c=el("div","chip"+(r.id===state.reasonId?" on":""));c.textContent=r.honne;c.onclick=()=>{state.reasonId=r.id;renderView();};ch.appendChild(c);});});p.appendChild(ch);
+    const r=REASONS.find(x=>x.id===state.reasonId);if(r){const b=el("div");b.style.marginTop="14px";if(r.asis)b.innerHTML=`<span class="badge-asis">✓ そのまま伝えてOK</span>`;b.appendChild(toneBlock(r));if(r.note){const n=el("div","note");n.textContent="💡 "+r.note;b.appendChild(n);}p.appendChild(b);}else{const h=el("div","sec-d");h.textContent="↑ 本音を選んでください。";p.appendChild(h);}view.appendChild(p);}
+  function rPush(){const p=el("div","panel");p.innerHTML=`<div class="sec-d">「感謝で受ける→決意は変えない→引き継ぎで誠意」。脅し系は毅然とでOK。</div>`;
+    const ch=el("div","chips");PUSHBACK.forEach(pb=>{const c=el("div","chip"+(pb.id===state.pushId?" on":""));c.textContent=pb.type;c.onclick=()=>{state.pushId=pb.id;renderView();};ch.appendChild(c);});p.appendChild(ch);
+    const pb=PUSHBACK.find(x=>x.id===state.pushId);if(pb){const b=el("div");b.style.marginTop="14px";const s=el("div","reframe"+(pb.threat?" warn":""));s.innerHTML=(pb.threat?"⚠️ ":"")+`「${esc(pb.said)}」と言われたら：`;b.appendChild(s);b.appendChild(toneBlock(pb));if(pb.note){const n=el("div","note");n.textContent=(pb.threat?"⚖️ ":"💡 ")+pb.note;b.appendChild(n);}p.appendChild(b);}else{const h=el("div","sec-d");h.textContent="↑ 言われた引き止めを選んでください。";p.appendChild(h);}view.appendChild(p);}
+  function rLaw(){const p=el("div","panel law");p.innerHTML=`<div class="sec-d">不安を消す後ろ盾。ここは事実なのでトーン分けなし。</div>`;
+    p.innerHTML+=`<h4>伝える順番</h4><ol><li>直属の上司にアポ（「相談がある」）</li><li>面談で口頭で意思表示（言い切る）</li><li>退職日を合意</li><li>退職届を提出</li><li>引き継ぎ</li><li>関係者・取引先へ周知</li><li>備品返却・離職票等の受領</li></ol>`;
+    p.innerHTML+=`<h4>退職願 と 退職届</h4><div class="lawcard"><span class="ttl">退職願</span>＝合意退職の「お願い」。承認前なら撤回できる。</div><div class="lawcard"><span class="ttl">退職届</span>＝確定的な意思表示。到達すると原則撤回できない（強く辞めたい時はこちら）。</div>`;
     const tpl="退職届\n\n私事、\nこのたび一身上の都合により、来る〇年〇月〇日をもって退職いたします。\n\n〇年〇月〇日\n（所属）　（氏名）　㊞\n\n〇〇株式会社\n代表取締役　〇〇　殿";
     const tb=el("div");tb.innerHTML=`<h4>退職届の文面（コピーして使う）</h4>`;tb.appendChild(copyBox("",tpl));p.appendChild(tb);
     p.insertAdjacentHTML("beforeend",`<h4>法律の要点（正確に）</h4>
-      <div class="lawcard"><span class="ttl">退職は2週間で成立</span>　期間の定めのない雇用は、申し出から2週間経過で契約終了。会社の承認は不要。<div class="src">民法627条1項（月給制でも2週間でOK＝旧規定は改正で廃止）</div></div>
-      <div class="lawcard"><span class="ttl">就業規則「1ヶ月前」より民法が優先</span>　円満のため就業規則に沿うのが実務だが、2週間を超える予告を強制する規定は無効とされる方向。<div class="src">民法627条／裁判例</div></div>
-      <div class="lawcard"><span class="ttl">有期契約でも辞められる</span>　原則は満了までだが、賃金不払い・ハラスメント・本人の病気・家族の介護等「やむを得ない事由」があれば期間途中でも退職可。<div class="src">民法628条</div></div>
-      <div class="lawcard"><span class="ttl">有給は退職前に消化できる</span>　会社は取得自体を拒否できない。退職日が決まっていれば時季をずらせず、退職前消化は実質拒否できない。<div class="src">労働基準法39条</div></div>`);
-    p.insertAdjacentHTML("beforeend",`<h4>即日退職・退職代行（正確に）</h4>
-      <p>即日退職は原則できない（2週間ルール）。ただし<b>有給が2週間分以上残っていれば、申し出→残りを有給消化で実質的に翌日から出社しない</b>ことは可能（会社合意があれば即日も可）。</p>
-      <p>退職代行の利用自体は違法ではないが、<b>民間業者が有給や退職日を「交渉」すると非弁行為（弁護士法72条）で違法になりうる</b>（伝言のみ可）。交渉が必要なら<b>労働組合運営・弁護士運営</b>を選ぶ。</p>`);
-    p.insertAdjacentHTML("beforeend",`<h4>やってはいけない（円満を壊す）</h4>
-      <ul><li>メール/LINEだけで一方的通告・バックレ（無断退職）</li><li>同僚に先に話す（うわさが先行）</li><li>繁忙期にいきなり／お酒の席で切り出す</li><li>不満や愚痴をぶつける・SNSに書く</li><li>引き継ぎ放棄</li></ul>`);
-    const esc2=el("div","escape");esc2.innerHTML=`<div class="h">自分で言うのがつらい人へ</div>
-      無理に一人で抱えなくて大丈夫。<br>・心身が限界なら<b>休職・通院</b>も選択肢。<br>・会社が違法な引き止めをするなら<b>労働基準監督署</b>へ。<br>・離職票が届かない等は<b>ハローワーク</b>に相談。<br>・どうしても自分で言えなければ<b>退職代行</b>（交渉が要るなら労働組合・弁護士運営を選ぶ）。`;
-    p.appendChild(esc2);
-    view.appendChild(p);
-  }
+      <div class="lawcard"><span class="ttl">退職は2週間で成立</span>　期間の定めのない雇用は、申し出から2週間で契約終了。会社の承認は不要。<div class="src">民法627条1項（月給制でも2週間でOK）</div></div>
+      <div class="lawcard"><span class="ttl">就業規則「1ヶ月前」より民法が優先</span>　円満のため就業規則に沿うのが実務だが、2週間超の予告強制は無効の方向。<div class="src">民法627条／裁判例</div></div>
+      <div class="lawcard"><span class="ttl">有期契約でも辞められる</span>　原則は満了までだが、賃金不払い・ハラスメント・本人の病気・家族の介護等「やむを得ない事由」があれば途中でも退職可。<div class="src">民法628条</div></div>
+      <div class="lawcard"><span class="ttl">有給は退職前に消化できる</span>　会社は取得自体を拒否できない。退職日が決まれば時季をずらせず実質拒否できない。<div class="src">労働基準法39条</div></div>`);
+    p.insertAdjacentHTML("beforeend",`<h4>即日退職・退職代行（正確に）</h4><p>即日は原則できない（2週間ルール）。ただし<b>有給が2週間分以上残っていれば、申し出→残りを有給消化で実質的に翌日から出社しない</b>ことは可能。</p><p>退職代行の利用自体は適法だが、<b>民間業者が有給・退職日を「交渉」すると非弁（弁護士法72条）で違法になりうる</b>（伝言のみ可）。交渉が要るなら<b>労働組合・弁護士運営</b>を。</p>`);
+    p.insertAdjacentHTML("beforeend",`<h4>やってはいけない</h4><ul><li>メール/LINEだけで一方的通告・バックレ</li><li>同僚に先に話す</li><li>繁忙期や酒の席でいきなり</li><li>不満・愚痴をぶつける／SNSに書く</li><li>引き継ぎ放棄</li></ul>`);
+    const e=el("div","escape2");e.innerHTML=`<div class="h">自分で言うのがつらい人へ</div>無理に一人で抱えなくて大丈夫。<br>・心身が限界 → <b>休職・通院</b><br>・違法な引き止め → <b>労働基準監督署</b><br>・離職票が届かない → <b>ハローワーク</b><br>・どうしても言えない → <b>退職代行</b>（交渉が要るなら労働組合・弁護士運営）`;p.appendChild(e);
+    view.appendChild(p);}
 
-  render();
+  function showCTA(){$("#cta").style.display="block";$("#ctaTitle").textContent=NOTE_TITLE;$("#ctaText").textContent=NOTE_TEXT;const a=$("#ctaLink");if(NOTE_URL){a.style.display="inline-block";a.href=NOTE_URL;a.textContent="noteで全部見る →";}else a.style.display="none";}
+
+  renderTypes();renderPermit();renderDetox();renderView();showCTA();
 })();
 </script>
 </body>
